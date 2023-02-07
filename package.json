@@ -12,7 +12,11 @@
     "@types/react-dom": "^18.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.5",
+    "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
+    "react-slugify": "^3.0.2",
+    "rehype-highlight": "^6.0.0",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
