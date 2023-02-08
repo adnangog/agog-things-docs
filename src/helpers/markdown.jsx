@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react"
 import ReactMarkdown from 'react-markdown'
 import rehypeHighlight from 'rehype-highlight'
-import gfm from "https://cdn.skypack.dev/remark-gfm@1.0.0";
+import remarkGfm from 'remark-gfm'
 import slugify from 'react-slugify';
 
 export default function Markdown({ AppMarkdown, comp }) {
@@ -59,7 +59,7 @@ export default function Markdown({ AppMarkdown, comp }) {
   }, []);
 
 
-  return <ReactMarkdown children={markdown} remarkPlugins={[gfm]} rehypePlugins={[rehypeHighlight]} components={{
+  return <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]} components={{
     p: ({ node, ...props }) => <CustomParagraph comp={comp} {...props} />,
     h2: ({ node, ...props }) => <CustomH2 comp={comp} {...props} />,
     h3: ({ node, ...props }) => <CustomH3 comp={comp} {...props} />,
