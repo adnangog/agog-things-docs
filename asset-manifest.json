@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/agog-things-docs/static/css/main.6573fba0.css",
-    "main.js": "/agog-things-docs/static/js/main.53ad3096.js",
+    "main.js": "/agog-things-docs/static/js/main.a61bd05e.js",
     "static/media/table.md": "/agog-things-docs/static/media/table.01b98dcf58ce826d2d30.md",
     "index.html": "/agog-things-docs/index.html",
     "static/media/datepicker.md": "/agog-things-docs/static/media/datepicker.f8e9f1e21174fd969f8b.md",
@@ -16,10 +16,10 @@
     "static/media/pager.md": "/agog-things-docs/static/media/pager.283a2d5b7864a3b4f771.md",
     "static/media/radio.md": "/agog-things-docs/static/media/radio.1042f924b70f568d7787.md",
     "main.6573fba0.css.map": "/agog-things-docs/static/css/main.6573fba0.css.map",
-    "main.53ad3096.js.map": "/agog-things-docs/static/js/main.53ad3096.js.map"
+    "main.a61bd05e.js.map": "/agog-things-docs/static/js/main.a61bd05e.js.map"
   },
   "entrypoints": [
     "static/css/main.6573fba0.css",
-    "static/js/main.53ad3096.js"
+    "static/js/main.a61bd05e.js"
   ]
 }
