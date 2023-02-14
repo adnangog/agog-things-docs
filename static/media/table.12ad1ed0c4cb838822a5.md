@@ -483,13 +483,59 @@ export default function App() {
 
 ## API
 
+  
 ### Table
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
 | columns | Columns of table | [ColumnsType](#column)\[] | - |
 | data | Data record array to be displayed | object\[] | - |
-| pagination | Config of pagination. You can ref table pagination [config](#pagination) or full [`pagination`](/components/pagination/) document, hide it by setting it to `false` | object \| `false` | - |
+| pagination | You can use this prop for pagination | boolean | false |
 | rowSelection | Row selection [config](#rowselection) | object | - |
-| isStickyHeader | Set sticky header and scroll bar | boolean \| `{offsetHeader?: number, offsetScroll?: number, getContainer?: () => HTMLElement}` | - | 4.6.0 (getContainer: 4.7.0) |
-| title | Table title renderer | function(currentPageData) | - |
+| isStickyHeader | Set sticky header  | boolean  | false |
+| title | Table title | string | - |
+| maxHeight | set table height| string \| number | - |
+| fullScreen | You can use this prop to make the table full screen | boolean  | false |
+| showHideColumns | shows a dropdown menu where you can adjust the column show/hide | boolean  | false |
+
+### Column
+
+One of the Table `columns` prop for describing the table's columns, Column has the same API.
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| align | The specify which way that column is aligned | `left` \| `right` \| `center` | `left` |
+| className | The className of this column | string | - |
+| colSpan | Span of this column's title | number | - |
+| isSticky | Set column to be fixed| boolean | false |
+| isFiltered | Set column to be filtered | boolean | false |
+| isSorted | Set column to be sorted | boolean | false |
+| key | Unique key of this column | string | - |
+| render | Renderer of the table cell. The return value should be a ReactNode | function(text, record, index) {} | - |
+| rowScope | Set scope attribute for all cells in this column | `row` | - |
+| title | Title of this column | string | - |
+| width | Width of this column | number | - |
+
+### rowSelection
+
+Properties for row selection.
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| checkStrictly | Check table row precisely; parent row and children rows are not associated | boolean | true |
+| columnTitle | Set the title of the selection column | ReactNode | - |
+| columnWidth | Set the width of the selection column | string \| number | `32px` |
+| fixed | Fixed selection column on the left | boolean | - |
+| getCheckboxProps | Get Checkbox or Radio props | function(record) | - |
+| hideSelectAll | Hide the selectAll checkbox and custom selection | boolean | false |
+| preserveSelectedRowKeys | Keep selection `key` even when it removed from `dataSource` | boolean | - |
+| renderCell | Renderer of the table cell. Same as `render` in column | function(checked, record, index, originNode) {} | - |
+| selectedRowKeys | Controlled selected row keys | string\[] \| number\[] | \[] |
+| selections | Custom selection [config](#selection), only displays default selections when set to `true` | object\[] \| boolean | - |
+| type | `checkbox` or `radio` | `checkbox` \| `radio` | `checkbox` |
+| onChange | Callback executed when selected rows change | function(selectedRowKeys, selectedRows, info: { type }) | - |
+| onSelect | Callback executed when select/deselect one row | function(record, selected, selectedRows, nativeEvent) | - |
+| onSelectAll | Callback executed when select/deselect all rows | function(selected, selectedRows, changeRows) | - |
+| onSelectInvert | Callback executed when row selection is inverted | function(selectedRowKeys) | - |
+| onSelectNone | Callback executed when row selection is cleared | function() | - |
+| onSelectMultiple | Callback executed when row selection is changed by pressing shift | function(selected, selectedRows, changeRows) | - |

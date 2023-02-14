@@ -1,4 +1,6 @@
 # Tooltip
+The `Tooltip` component is used when you want to give a small hint about anything you mouse over.
+
 {{Basic}}
 ```jsx
 import ToolTip from '../../package/components/tooltip';

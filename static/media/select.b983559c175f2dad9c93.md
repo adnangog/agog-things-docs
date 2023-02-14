@@ -1,5 +1,9 @@
 # Select
+You can use `Select` component for select value or values  from several options.
+
 ## Basic usage
+The simple usage of this component is as follows:
+
 {{Basic}}
 ```jsx
 import React, { useState } from 'react'
@@ -37,6 +41,8 @@ export default function App() {
 }
 ```
 ## Clear
+You can use the **isClear** prop to add a small cancel icon to cancel the selected value.
+
 {{Clear}}
 ```jsx
 import React, { useState } from 'react'
@@ -75,6 +81,8 @@ export default function App() {
 }
 ```
 ## Multiple
+For multiple selection you should use **isMultiple** prop.
+
 {{Multiple}}
 ```jsx
 import React, { useState } from 'react'
@@ -141,6 +149,8 @@ export default function App() {
 }
 ```
 ## Total Selected
+The **isTotalDisplay** prop will come in handy to easily show how many values have been selected in multiple selections.
+
 {{TotalSelected}}
 ```jsx
 import React, { useState } from 'react'
@@ -208,6 +218,8 @@ export default function App() {
 }
 ```
 ## Etiquette
+The **isEtiquette** prop is a very useful feature that allows you to easily edit selected values.
+
 {{Etiquette}}
 ```jsx
 import React, { useState } from 'react'
@@ -275,6 +287,8 @@ export default function App() {
 }
 ```
 ## Grouping
+You can use the **isGroup** prop to show your options in groups.
+
 {{Grouping}}
 ```jsx
 import React, { useState } from 'react'
@@ -352,6 +366,8 @@ export default function App() {
 }
 ```
 ## Filtering
+The **isFilter** prop is used to filter the options in the `Select` component.
+
 {{Filtering}}
 ```jsx
 import React, { useState } from 'react'

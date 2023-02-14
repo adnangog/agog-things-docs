@@ -1,5 +1,9 @@
 # Date picker
+`Datepicker` component is used to select any date.
+
 ## Basic usage
+The simple usage of this component is as follows:
+
 {{Basic}}
 ```jsx
 import Datepicker, {DatePickerProps} from '../../package/components/datepicker';

@@ -1,4 +1,6 @@
 # Dropdown
+A dropdown list.
+
 ## Basic usage
 {{Basic}}
 ```jsx
@@ -10,7 +12,6 @@ export default function App() {
   const [colors, setColors] = useState(null)
   const cbColors: CheckBoxProps = {
     value: colors,
-    label: "Color",
     onSelect: (value: any ) => setColors(value),
     items: [
       {

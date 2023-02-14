@@ -1,5 +1,9 @@
 # Radio
+You can use the `Radio` component to select a value from multiple options.
+
 ## Basic usage
+The simple usage of this component is as follows:
+
 {{Basic}}
 ```jsx
 import React, { useState } from 'react'
