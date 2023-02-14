@@ -493,3 +493,32 @@ export default function App() {
 | rowSelection | Row selection [config](#rowselection) | object | - |
 | isStickyHeader | Set sticky header and scroll bar | boolean \| `{offsetHeader?: number, offsetScroll?: number, getContainer?: () => HTMLElement}` | - | 4.6.0 (getContainer: 4.7.0) |
 | title | Table title renderer | function(currentPageData) | - |
+
+### Column
+
+One of the Table `columns` prop for describing the table's columns, Column has the same API.
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| align | The specify which way that column is aligned | `left` \| `right` \| `center` | `left` |
+| className | The className of this column | string | - |
+| colSpan | Span of this column's title | number | - |
+| dataIndex | Display field of the data record, support nest path by string array | string \| string\[] | - |
+| defaultFilteredValue | Default filtered values | string\[] | - |
+| defaultSortOrder | Default order of sorted values | `ascend` \| `descend` | - |
+| ellipsis | The ellipsis cell content, not working with sorter and filters for now.<br />tableLayout would be `fixed` when `ellipsis` is `true` or `{ showTitle?: boolean }` | boolean \| {showTitle?: boolean } | false |
+| filtered | Whether the `dataSource` is filtered | boolean | false |
+| filteredValue | Controlled filtered value, filter icon will highlight | string\[] | - |
+| filterIcon | Customized filter icon | ReactNode \| (filtered: boolean) => ReactNode | - |
+| filterMultiple | Whether multiple filters can be selected | boolean | true |
+| filterSearch | Whether to be searchable for filter menu | boolean \| function(input, record):boolean | false | boolean:4.17.0 function:4.19.0 |
+| filters | Filter menu config | object\[] | - |
+| fixed | (IE not support) Set column to be fixed: `true`(same as left) `'left'` `'right'` | boolean \| string | false |
+| key | Unique key of this column, you can ignore this prop if you've set a unique `dataIndex` | string | - |
+| render | Renderer of the table cell. The return value should be a ReactNode | function(text, record, index) {} | - |
+| rowScope | Set scope attribute for all cells in this column | `row` \| `rowgroup` | - |
+| sortDirections | Supported sort way, override `sortDirections` in `Table`, could be `ascend`, `descend` | Array | \[`ascend`, `descend`] |
+| sorter | Sort function for local sort, see [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)'s compareFunction. If you need sort buttons only, set to `true` | function \| boolean | - |
+| sortOrder | Order of sorted values: `ascend` `descend` `null` | `ascend` \| `descend` \| null | - |
+| title | Title of this column | ReactNode \| ({ sortOrder, sortColumn, filters }) => ReactNode | - |
+| width | Width of this column ([width not working?](https://github.com/ant-design/ant-design/issues/13825#issuecomment-449889241)) | string \| number | - |

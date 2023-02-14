@@ -26,7 +26,8 @@ export default function App() {
         label: "Iran",
         value: 35,
       }
-    ]
+    ],
+    isClear: true
   }
   
   return <Select {...ddlCountries}/>;

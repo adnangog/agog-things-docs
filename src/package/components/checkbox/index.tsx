@@ -15,8 +15,10 @@ export default function CheckBox({ onSelect, value, label, infoText, items, dire
     return value?.toString().split(',').includes(val.toString())
   }
 
+  const compStyle : React.CSSProperties = direction === "horizontal" ? { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", gap: 10  } : {flexDirection: "column", alignItems: "flex-start", justifyContent: "flex-start"};
+
   return (
-    <div className='agog-checkbox' style={{ ...style, flexDirection: direction === "horizontal" ? "row" : "column" }}>
+    <div className='agog-checkbox' style={{ ...style, ...compStyle }}>
       {label && <span className='info-text'>{label}</span>}
       {items?.map((item, index) => {
         return (

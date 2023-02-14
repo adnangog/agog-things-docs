@@ -1,14 +1,35 @@
 import React, { useState } from 'react'
-import TextBox, {TextBoxProps} from '../../package/components/textbox';
+import CheckBox, {CheckBoxProps} from '../../package/components/checkbox';
 
 export default function App() {
-  const [name, setName] = useState()
-  const txtName: TextBoxProps = {
-    label: 'Name Surname',
-    value: name,
-    placeholder: 'Your name and surname',
-    onChange: (value) => setName(value)
+  const [colors, setColors] = useState(null)
+  const cbColors: CheckBoxProps = {
+    value: colors,
+    label: "Color",
+    onSelect: (value: any ) => setColors(value),
+    items: [
+      {
+        label: "Blue",
+        value: 34
+      },
+      {
+        label: "Yellow",
+        value: 6,
+      },
+      {
+        label: "Red",
+        value: 16,
+      },
+      {
+        label: "Green",
+        value: 35,
+      },
+      {
+        label: "Black",
+        value: 55,
+      }
+    ]
   }
   
-  return <TextBox {...txtName}/>;
+  return <CheckBox {...cbColors}/>;
 }

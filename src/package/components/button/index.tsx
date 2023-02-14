@@ -1,15 +1,15 @@
 import Ripple from './ripple'
-import '../styles/button.css'
+import styles from  '../styles/button.module.css'
 
-export default function Button({ children, style, isRipple = false, onClick }: ButtonProps) {
-  const handlerClick = () => {
+export default function Button({ children, style, isRipple = true, onClick }: ButtonProps) {
+  const handlerClick = (e:any) => {
     if (onClick) {
-      onClick()
+      onClick(e)
     }
   }
 
   const button = (
-    <button className='agog-button' style={style} onClick={handlerClick}>
+    <button className={styles.agogButton} style={style} onClick={handlerClick}>
       {children}
     </button>
   )
@@ -22,5 +22,5 @@ export interface ButtonProps {
   children: JSX.Element | string
   style?: React.CSSProperties
   isRipple?: boolean
-  onClick?(): void
+  onClick?(e:any): void
 }

@@ -1,6 +1,8 @@
+import styles from  '../styles/button.module.css'
+
 export default function Ripple({ isRadius, children }: ButtonProps) {
   return (
-    <div className='ripple-cont' style={isRadius ? { borderRadius: '50%' } : {}} onClick={createRipple}>
+    <div className={styles.rippleCont} style={isRadius ? { borderRadius: '50%' } : {}} onClick={createRipple}>
       {children}
     </div>
   )

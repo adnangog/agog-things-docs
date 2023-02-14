@@ -1,14 +1,12 @@
-import React, { useState } from 'react'
-import TextBox, {TextBoxProps} from '../../package/components/textbox';
+import React, { useState, useEffect } from 'react'
+import Pager from '../../package/components/pager';
 
 export default function App() {
-  const [name, setName] = useState()
-  const txtName: TextBoxProps = {
-    label: 'Name Surname',
-    value: name,
-    placeholder: 'Your name and surname',
-    onChange: (value) => setName(value)
-  }
-  
-  return <TextBox {...txtName}/>;
+  const [state, setState] = useState({
+    countPerPage: 10,
+    page: 1,
+  })
+
+
+  return <Pager page={state.page} countPerPage={state.countPerPage} onSelect={({page, countPerPage}:{page: number; countPerPage: number;})=>setState({...state, page, countPerPage})} totalCount={200} />;
 }

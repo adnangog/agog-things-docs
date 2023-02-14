@@ -6,7 +6,7 @@ export default function Select({
   value,
   label,
   placeholder = '',
-  searchPlaceholder = '',
+  searchPlaceholder = 'search keyword',
   onSelect: OnSelect,
   infoText,
   items,

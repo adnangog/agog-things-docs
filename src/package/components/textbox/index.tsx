@@ -3,14 +3,13 @@ import '../styles/textbox.css'
 export default function TextBox({
   value,
   label,
-  placeholder = '',
   onChange: OnChange,
   onFocus,
   infoText,
   pattern,
-  type = 'text',
   style,
   visualType = 'materialOutline',
+  ...props
 }: TextBoxProps): JSX.Element {
   const handleChange = (event: any) => {
     const str = event.target.value
@@ -36,12 +35,11 @@ export default function TextBox({
         <input
           autoComplete='off'
           id='myTextBox'
-          type={type}
           value={value}
           onFocus={onFocus}
           onChange={handleChange}
-          placeholder={placeholder}
           className='agog-input'
+          {...props}
         />
         <fieldset aria-hidden='true'>
           <legend>
@@ -59,10 +57,8 @@ export interface TextBoxProps extends InputHTMLAttributes<HTMLInputElement> {
   onFocus?(): void
   value?: string
   label?: string
-  placeholder?: string
   infoText?: string
   pattern?: string
-  type?: 'text' | 'number'
   style?: React.CSSProperties
-  visualType?: 'materialOutline' | 'materialFilled' | 'materialStandard'
+  visualType?: 'materialOutline' | 'materialFilled' | 'materialStandard',
 }

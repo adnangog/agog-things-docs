@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
-import TextBox, {TextBoxProps} from '../../package/components/textbox';
+import Switch, {SwitchProps} from '../../package/components/switch';
 
 export default function App() {
-  const [name, setName] = useState()
-  const txtName: TextBoxProps = {
-    label: 'Name Surname',
-    value: name,
-    placeholder: 'Your name and surname',
-    onChange: (value) => setName(value)
+  const [isOk, setIsOk] = useState(false)
+  const swcIsOk : SwitchProps = {
+    value: isOk,
+    onChange: (val)=> setIsOk(val)
   }
   
-  return <TextBox {...txtName}/>;
+  return <Switch {...swcIsOk}/>;
 }

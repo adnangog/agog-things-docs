@@ -1,14 +1,5 @@
-import React, { useState } from 'react'
-import TextBox, {TextBoxProps} from '../../package/components/textbox';
+import Buton from '../../package/components/button';
 
-export default function App() {
-  const [name, setName] = useState()
-  const txtName: TextBoxProps = {
-    label: 'Name Surname',
-    value: name,
-    placeholder: 'Your name and surname',
-    onChange: (value) => setName(value)
-  }
-  
-  return <TextBox {...txtName}/>;
+export default function App() {  
+  return <Buton onClick={()=>console.log("click click")}>Click</Buton>;
 }

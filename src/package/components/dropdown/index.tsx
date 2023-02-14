@@ -13,7 +13,6 @@ export default function DropDown({ label, children }: DropDownProps) {
     })
 
     const handleClick = (e: any) => {
-
         // e.currentTarget.offsetHeight;
 
         const box = e.currentTarget.getBoundingClientRect();
@@ -28,7 +27,7 @@ export default function DropDown({ label, children }: DropDownProps) {
 
     const btnDropDown: ButtonProps = {
         children: label,
-        onClick: () => handleClick
+        onClick: (e) => handleClick(e)
     }
 
     return <>

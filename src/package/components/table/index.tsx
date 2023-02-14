@@ -117,7 +117,7 @@ export default function Table({ columns, data, isStickyHeader, rowSelection, tit
       state.filter.key && state.filter.items.find((i) => i.key === state.filter.key)
         ? state.filter.items.find((i) => i.key === state.filter.key)?.value
         : '',
-    label: 'Filtre değeri',
+    label: 'Filter value',
     placeholder: '...',
     type: 'text',
     style: { flex: 1 },
@@ -162,8 +162,8 @@ export default function Table({ columns, data, isStickyHeader, rowSelection, tit
 
   const ddlFields: SelectProps = {
     value: state.filter.key,
-    placeholder: '--Lütfen Seçin--',
-    label: 'Filtrelenecek Kolon',
+    placeholder: '--Please select--',
+    label: 'Column to filter',
     onSelect: (value: null | number) => {
       setState((prevState) => ({ ...prevState, filter: { ...prevState.filter, key: value } }))
     },

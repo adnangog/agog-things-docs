@@ -1,14 +1,6 @@
-import React, { useState } from 'react'
-import TextBox, {TextBoxProps} from '../../package/components/textbox';
+import ToolTip from '../../package/components/tooltip';
 
 export default function App() {
-  const [name, setName] = useState()
-  const txtName: TextBoxProps = {
-    label: 'Name Surname',
-    value: name,
-    placeholder: 'Your name and surname',
-    onChange: (value) => setName(value)
-  }
   
-  return <TextBox {...txtName}/>;
+  return <ToolTip text={"Earth is the third planet from the Sun "}><span>Earth</span></ToolTip>;
 }

@@ -327,8 +327,8 @@ export default function DatePicker({
 }
 
 export interface DatePickerProps {
-  lang: string
-  format: string
+  lang?: string
+  format?: string
   callbackBefore?: void
   callbackAfter?: void
   onChange(str: string): void
