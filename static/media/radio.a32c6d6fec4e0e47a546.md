@@ -42,3 +42,23 @@ export default function App() {
   return <Radio {...rblCountries}/>;
 }
 ```
+
+## API
+### Radio Props
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| disabled | If disable all radioboxes | boolean | false |
+| label | label of component | string | - |
+| infoText | extra info | string | - |
+| options | options | string\[] \| number\[] \| Option\[] | \[] |
+| value | Used for setting the currently selected value | (string \| number)\[] | \[] |
+| direction | direction of options | `'vertical'` \| `'horizontal'` | `'vertical'` |
+| onChange | The callback function that is triggered when the state changes | function(checkedValue) | - |
+
+### Options Props
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| disabled | disable option | boolean | false |
+| label | label of option | string | - |
+| value | option value | (string \| number)\[] | \[] |
+| group | group field | string | - |
