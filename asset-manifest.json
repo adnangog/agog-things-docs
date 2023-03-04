@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/agog-things-docs/static/css/main.882ec975.css",
-    "main.js": "/agog-things-docs/static/js/main.a7d76e84.js",
+    "main.css": "/agog-things-docs/static/css/main.52526917.css",
+    "main.js": "/agog-things-docs/static/js/main.cdcc8be1.js",
     "static/media/select.md": "/agog-things-docs/static/media/select.184b995bc2534632cb6f.md",
     "static/media/table.md": "/agog-things-docs/static/media/table.48c5a8c499e3f62c6a2d.md",
     "static/media/textbox.md": "/agog-things-docs/static/media/textbox.6ed72bf2e7d1f0a25deb.md",
@@ -15,11 +15,11 @@
     "static/media/pager.md": "/agog-things-docs/static/media/pager.e1b2d8f49a2552e396bb.md",
     "static/media/switch.md": "/agog-things-docs/static/media/switch.06a8434debe3304acf06.md",
     "static/media/loading.md": "/agog-things-docs/static/media/loading.5cc17ccc500418198a94.md",
-    "main.882ec975.css.map": "/agog-things-docs/static/css/main.882ec975.css.map",
-    "main.a7d76e84.js.map": "/agog-things-docs/static/js/main.a7d76e84.js.map"
+    "main.52526917.css.map": "/agog-things-docs/static/css/main.52526917.css.map",
+    "main.cdcc8be1.js.map": "/agog-things-docs/static/js/main.cdcc8be1.js.map"
   },
   "entrypoints": [
-    "static/css/main.882ec975.css",
-    "static/js/main.a7d76e84.js"
+    "static/css/main.52526917.css",
+    "static/js/main.cdcc8be1.js"
   ]
 }
