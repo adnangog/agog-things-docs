@@ -7,7 +7,7 @@ The simple usage of this component is as follows:
 {{Basic}}
 ```jsx
 import React, { useState } from 'react'
-import TextBox, {TextBoxProps} from '../../package/components/textbox';
+import {TextBox, TextBoxProps} from 'agog-things'
 
 export default function App() {
   const [name, setName] = useState()
@@ -28,7 +28,7 @@ You can use the **isClear** prop to add a small cancel icon to remove input cont
 {{IsClear}}
 ```jsx
 import React, { useState } from 'react'
-import TextBox, {TextBoxProps} from '../../package/components/textbox';
+import {TextBox, TextBoxProps} from 'agog-things'
 
 export default function App() {
   const [name, setName] = useState()
@@ -49,7 +49,7 @@ export default function App() {
 {{Disabled}}
 ```jsx
 import React, { useState } from 'react'
-import TextBox, {TextBoxProps} from '../../package/components/textbox';
+import {TextBox, TextBoxProps} from 'agog-things'
 
 export default function App() {
   const [name, setName] = useState()
@@ -69,7 +69,7 @@ export default function App() {
 {{Size}}
 ```jsx
 import React, { useState } from 'react'
-import TextBox, {TextBoxProps} from '../../package/components/textbox';
+import {TextBox, TextBoxProps} from 'agog-things'
 
 export default function App() {
   const [name, setName] = useState()
@@ -109,7 +109,7 @@ export default function App() {
 {{Numeric}}
 ```jsx
 import React, { useState } from 'react'
-import TextBox, {TextBoxProps} from '../../package/components/textbox';
+import {TextBox, TextBoxProps} from 'agog-things'
 
 export default function App() {
   const [name, setName] = useState()
@@ -136,6 +136,7 @@ export default function App() {
 | maxLength | The max length | number | - |
 | size | The size of the input box. Note: in the context of a form, the `middle` size is used | `large` \| `middle` \| `small` | - |
 | type | The type of input, see: [MDN](https://developer.mozilla.org/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types)( use `Input.TextArea` instead of `type="textarea"`) | string | `text` |
+| label | label of option | string | - |
 | value | The input content value | string | - |
 | onChange | Callback when user input | function(e) | - |
 | onPressEnter | The callback function that is triggered when Enter key is pressed | function(e) | - |

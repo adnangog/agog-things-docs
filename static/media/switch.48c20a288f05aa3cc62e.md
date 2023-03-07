@@ -4,7 +4,7 @@ Switching Selector.
 {{Basic}}
 ```jsx
 import React, { useState } from 'react'
-import Switch, {SwitchProps} from '../../package/components/switch';
+import {Switch, SwitchProps} from 'agog-things'
 
 export default function App() {
   const [isOk, setIsOk] = useState(false)

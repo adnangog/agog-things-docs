@@ -6,7 +6,7 @@ The simple usage of this component is as follows:
 {{Basic}}
 ```jsx
 import React, { useState } from 'react'
-import CheckBox, {CheckBoxProps} from '../../package/components/checkbox';
+import { CheckBox, CheckBoxProps} from 'agog-things';
 
 export default function App() {
   const [colors, setColors] = useState()
@@ -48,7 +48,7 @@ export default function App() {
 {{Direction}}
 ```jsx
 import React, { useState } from 'react'
-import CheckBox, {CheckBoxProps} from '../../package/components/checkbox';
+import { CheckBox, CheckBoxProps} from 'agog-things';
 
 export default function App() {
   const [colors, setColors] = useState(null)

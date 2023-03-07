@@ -5,8 +5,7 @@ A dropdown list.
 {{Basic}}
 ```jsx
 import React, { useState } from 'react'
-import DropDown, {DropDownProps} from '../../package/components/dropdown';
-import CheckBox, {CheckBoxProps} from '../../package/components/checkbox';
+import { DropDown, DropDownProps, CheckBox, CheckBoxProps} from 'agog-things';
 
 export default function App() {
   const [colors, setColors] = useState(null)
@@ -44,3 +43,10 @@ export default function App() {
   return <DropDown {...ddProps}><CheckBox {...cbColors}/></DropDown>;
 }
 ```
+
+## API
+### Dropdown Props
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| label | Label of Dropdown | string \| JSX.Element | - |
+| children | Content of Dropdown | JSX.Element | - |

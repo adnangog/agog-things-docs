@@ -7,7 +7,7 @@ The simple usage of this component is as follows:
 {{Basic}}
 ```jsx
 import React, { useState } from 'react'
-import Radio, {RadioButtonProps} from '../../package/components/radio';
+import {RadioButton, RadioButtonProps} from 'agog-things'
 
 export default function App() {
   const [country, setcountry] = useState()
@@ -39,7 +39,7 @@ export default function App() {
     ]
   }
   
-  return <Radio {...rblCountries}/>;
+  return <RadioButton {...rblCountries}/>;
 }
 ```
 

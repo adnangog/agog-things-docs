@@ -7,7 +7,7 @@ The simple usage of this component is as follows:
 {{Basic}}
 ```jsx
 import React, { useState } from 'react'
-import Select, {SelectProps} from '../../package/components/select';
+import {Select, SelectProps} from 'agog-things'
 
 export default function App() {
   const [country, setCountry] = useState()
@@ -165,7 +165,7 @@ You can use the **isClear** prop to add a small cancel icon to cancel the select
 {{Clear}}
 ```jsx
 import React, { useState } from 'react'
-import Select, {SelectProps} from '../../package/components/select';
+import {Select, SelectProps} from 'agog-things'
 
 export default function App() {
   const [country, setCountry] = useState()
@@ -205,7 +205,7 @@ For multiple selection you should use **isMultiple** prop.
 {{Multiple}}
 ```jsx
 import React, { useState } from 'react'
-import Select, {SelectProps} from '../../package/components/select';
+import {Select, SelectProps} from 'agog-things'
 
 export default function App() {
   const [country, setCountry] = useState()
@@ -273,7 +273,7 @@ The **isTotalDisplay** prop will come in handy to easily show how many values ha
 {{TotalSelected}}
 ```jsx
 import React, { useState } from 'react'
-import Select, {SelectProps} from '../../package/components/select';
+import {Select, SelectProps} from 'agog-things'
 
 export default function App() {
   const [country, setCountry] = useState()
@@ -342,7 +342,7 @@ The **isEtiquette** prop is a very useful feature that allows you to easily edit
 {{Etiquette}}
 ```jsx
 import React, { useState } from 'react'
-import Select, {SelectProps} from '../../package/components/select';
+import {Select, SelectProps} from 'agog-things'
 
 export default function App() {
   const [country, setCountry] = useState()
@@ -411,7 +411,7 @@ You can use the **isGroup** prop to show your options in groups.
 {{Grouping}}
 ```jsx
 import React, { useState } from 'react'
-import Select, {SelectProps} from '../../package/components/select';
+import {Select, SelectProps} from 'agog-things'
 
 export default function App() {
   const [country, setCountry] = useState()
@@ -490,7 +490,7 @@ The **isFilter** prop is used to filter the options in the `Select` component.
 {{Filtering}}
 ```jsx
 import React, { useState } from 'react'
-import Select, {SelectProps} from '../../package/components/select';
+import {Select, SelectProps} from 'agog-things'
 
 export default function App() {
   const [country, setCountry] = useState()

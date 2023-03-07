@@ -5,10 +5,10 @@ The simple usage of this component is as follows:
 
 {{Basic}}
 ```jsx
-import Buton from '../../package/components/button';
+import {Button} from 'agog-things';
 
 export default function App() {  
-  return <Buton onClick={()=>console.log("click click")}>Click</Buton>;
+  return <Button onClick={()=>console.log("click click")}>Click</Button>;
 }
 ```
 
@@ -16,7 +16,7 @@ export default function App() {
 
 {{ElementType}}
 ```jsx
-import Buton, { ButtonProps } from '../../package/components/button';
+import {Button, ButtonProps} from 'agog-things';
 
 export default function App() {
   const btnPrimary: ButtonProps = {
@@ -40,11 +40,11 @@ export default function App() {
     elementType: "text"
   }
   return <div style={{gap:10, display: 'flex', padding: 10, alignItems:'center'}}>
-    <Buton {...btnPrimary} />
-    <Buton {...btnTransparent} />
-    <Buton {...btnDashed} />
-    <Buton {...btnLink} />
-    <Buton {...btnText} />
+    <Button {...btnPrimary} />
+    <Button {...btnTransparent} />
+    <Button {...btnDashed} />
+    <Button {...btnLink} />
+    <Button {...btnText} />
   </div>;
 }
 ```
@@ -53,7 +53,7 @@ export default function App() {
 
 {{Size}}
 ```jsx
-import Buton, { ButtonProps } from '../../package/components/button';
+import {Button, ButtonProps} from 'agog-things';
 
 export default function App() {
   const btnLarge: ButtonProps = {
@@ -69,9 +69,9 @@ export default function App() {
     size: 'small'
   }
   return <>
-    <Buton {...btnLarge} />
-    <Buton {...btnMiddle} />
-    <Buton {...btnSmall} />
+    <Button {...btnLarge} />
+    <Button {...btnMiddle} />
+    <Button {...btnSmall} />
   </>;
 }
 ```
@@ -80,7 +80,7 @@ export default function App() {
 
 {{Shape}}
 ```jsx
-import Buton, { ButtonProps } from '../../package/components/button';
+import {Button, ButtonProps} from 'agog-things';
 
 export default function App() {
   const btnDefault: ButtonProps = {
@@ -100,9 +100,9 @@ export default function App() {
   }
 
   return <div style={{gap:10, display: 'flex', padding: 10, alignItems:'center'}}>
-    <Buton {...btnDefault} />
-    <Buton {...btnRound} />
-    <Buton {...btnCircle} />
+    <Button {...btnDefault} />
+    <Button {...btnRound} />
+    <Button {...btnCircle} />
   </div>;
 }
 ```
@@ -111,10 +111,10 @@ export default function App() {
 
 {{Loading}}
 ```jsx
-import Buton, {ButtonProps} from '../../package/components/button';
+import {Button, ButtonProps} from 'agog-things';
 
 export default function App() {  
-  return <Buton loading={true} elementType="primary">Loading</Buton>;
+  return <Button loading={true} elementType="primary">Loading</Button>;
 }
 ```
 
@@ -122,10 +122,10 @@ export default function App() {
 
 {{Stretch}}
 ```jsx
-import Buton, {ButtonProps} from '../../package/components/button';
+import {Button, ButtonProps} from 'agog-things';
 
 export default function App() {  
-  return <Buton stretch elementType="primary">Click</Buton>;
+  return <Button stretch elementType="primary">Click</Button>;
 }
 ```
 
@@ -133,10 +133,10 @@ export default function App() {
 
 {{Disabled}}
 ```jsx
-import Buton, {ButtonProps} from '../../package/components/button';
+import {Button, ButtonProps} from 'agog-things';
 
 export default function App() {  
-  return <Buton disabled elementType="primary">Disabled</Buton>;
+  return <Button disabled elementType="primary">Disabled</Button>;
 }
 ```
 
